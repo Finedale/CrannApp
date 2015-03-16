@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>New Page 1</title>
+	</head>
+	<script>
+		function favsports() {
+
+			var choice=document.getElementById("mylist");
+			document.getElementById("favourite").value=choice.options[choice.selectedIndex].text;
+		}
+	</script>
+	<body>
+		<form>
+			Select your favourite Sport:
+			<select id="mylist" onchange="favsports()">
+				<option>Soccer</option>
+				<option>Rugby</option>
+				<option>Hockey</option>
+				<option>Gaelic</option>
+			</select>
+
+			<p>
+				Your favourite Sport is: <input type="text" id="favourite" size="20">
+			</p>
+	</body>
+
+</html>Enter file contents here
